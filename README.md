@@ -2,4 +2,4 @@
 ## Проект 
 Этот репозиторий предназначен для страницы-портфолио. 
 ## Ссылки 
-- [Публичная страница проекта на GitHub Pages](https://lta1gh.github.io/portfolio/)
+- [Публичная страница проекта на GitHub Pages](https://lta1gh.github.io/Portfolio/)
