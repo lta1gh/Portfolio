@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+
+<head> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portfolio | LTA1GH</title> 
+    <meta name="description" content="Портфолио разработчика"> 
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head> 
+
+<body> 
+    <!-- Шапка -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-primary py-3">
+            <div class="container-fluid">
+                <div class="row align-items-center w-100">
+                    <!-- Логотип -->
+                    <div class="col text-start">
+                        <a class="navbar-brand fs-3" href="index.html">Portfolio | LTA1GH</a>
+                    </div>
+                    
+                    <!-- Навигация -->
+                    <div class="col-6">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav justify-content-left w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">
+                                        <i class="bi bi-person-badge"></i> Portfolio
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/projects.html">
+                                        <i class="bi bi-folder2-open"></i> Проекты
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/roadmap.html">
+                                        <i class="bi bi-map"></i> Roadmap
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/contacts.html">
+                                        <i class="bi bi-telephone"></i> Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Breadcrumbs -->
+                    <div class="col text-end">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0 breadcrumb-custom justify-content-end">
+                                <li class="breadcrumb-item active"><a href="index.html" style="color: darkorchid; text-decoration: none;">Portfolio</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="row mb-5 pb-4 border-bottom border-2 border-primary">
+            <div class="col-md-4 mb-4">
+                <img src="images/photo.jpg" class="img-fluid rounded shadow" alt="Фото профиля">
+            </div>
+            <div class="col-md-8">
+                <h1 class="display-4 mb-4">О себе</h1>
+                <p class="lead">
+                    Я студент группы ЭФБО-10-24, д̷̢̨̘̖̜̎̈́͋е̸̘̰͔͇͉̠̟͗̌̕л̸̡̛̥̮͇̝͓̖͕̯̃̆̓̎̂͑̕а̶̡͖̤͕̪̂̏́̅͘͘͡ю̶̡̥̝̘̣̻̼͋͂̒̆́̂̑͠͝ ̵̢̢̝͍̠̪̈́̑̅̚в̵̺̩̙́̅̊̀̚͜и̸̡̧̨̘̱̭̟͖͇͖̓̽͂д̸͍̜̘̖̹̹̀͊͡ͅ,̷̡̨̲͖͋̈́́ ̵̟̗̺̙̈́̈́̔̒̌͟͡ӵ̴̡̲̹̲̯̲̤̽̅̈́̈́͜͜͡т̵̲̤̞̠͈̙̿̈̋̌́͜о̸̠̀̎͝  мне нравится веб-разработка.
+                </p>
+            </div>
+        </section>
+
+        <!-- Секция "Навыки" -->
+        <section class="row mb-5 pb-4 border-bottom border-2 border-primary">
+            <div class="col-12">
+                <h2 class="display-5 mb-4">Мои навыки</h2>
+                
+                <!-- Навык 1 -->
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span>HTML/CSS</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                <!-- Навык 2 -->
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span>JavaScript</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                <!-- Навык 3 -->
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span>C#</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Секция "Мои проекты" -->
+        <section class="row mb-5">
+            <div class="col-12">
+                <h2 class="display-5 mb-4">Мои проекты</h2>
+                
+                <div class="row g-4">
+                    <!-- Проект 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="task-card h-100 project-card border-2 shadow-sm">
+                            <img src="images/project1.png" class="card-img-top" alt="Проект 1">
+                            <div class="card-body">
+                                <h5 class="card-title">ProjectR1</h5>
+                                <p class="card-text">Вымышленный сайт студии, занимающейся веб-разработкой и дизайном.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="task-card h-100 project-card border-2 shadow-sm">
+                            <img src="images/photo.jpg" class="card-img-top" alt="Проект 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Portfolio</h5>
+                                <p class="card-text">Сайт-портфолио, к̶͉̬̌͠о̵̦̗̐̍п̴͉̹͠и̴̛̻͇͊я̶̱̓ ̵̯͌̑с̷͉̀ ̵̙͑̄͜п̷̮͂͘ё̵͚́р̸͍̔в̸̗̇о̵̛̣̱̅г̸̘̯͂̒о̵̭̅ ̶̻̝̋̆п̷̭̕р̶̪͗о̸͉̹̎е̸͍͇͌̄к̸̨͂т̷̢̧͑а̸̯͓̌.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="task-card h-100 project-card border-2 shadow-sm">
+                            <img src="images/soon.png" class="card-img-top" alt="Проект 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Скоро...</h5>
+                                <p class="card-text">Скоро здесь будет еще один проект.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="task-card h-100 project-card border-2 shadow-sm">
+                            <img src="images/soon.png" class="card-img-top" alt="Проект 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Скоро...</h5>
+                                <p class="card-text">Скоро здесь будет еще один проект.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <!-- Подвал сайта -->
+    <footer class="bg-light border-top border-2 border-primary py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Portfolio. Все права защищены.</p>
+            <p class="mb-0">Email: contact@portfolio.com</p>
+        </div>
+    </footer> 
+</body> 
+</html>

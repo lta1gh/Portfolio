@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+
+<head> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Контакты | Portfolio</title> 
+    <meta name="description" content="Контактная информация"> 
+    <link rel="icon" href="../images/icons/favicon.ico" type="image/x-icon"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head> 
+
+<body> 
+    <!-- Шапка -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-primary py-3">
+            <div class="container-fluid">
+                <div class="row align-items-center w-100">
+                    <!-- Логотип -->
+                    <div class="col text-start">
+                        <a class="navbar-brand fs-3" href="../index.html">Portfolio | LTA1GH</a>
+                    </div>
+                    
+                    <!-- Навигация -->
+                    <div class="col-6">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav justify-content-left w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">
+                                        <i class="bi bi-person-badge"></i> Portfolio
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/projects.html">
+                                        <i class="bi bi-folder2-open"></i> Проекты
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/roadmap.html">
+                                        <i class="bi bi-map"></i> Roadmap
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pages/contacts.html">
+                                        <i class="bi bi-telephone"></i> Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Breadcrumbs -->
+                    <div class="col text-end">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0 breadcrumb-custom justify-content-end">
+                                <li class="breadcrumb-item"><a href="../index.html" style="color: darkorchid; text-decoration: none;">Portfolio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- Заголовок -->
+        <div class="row mb-5 pb-4 border-bottom border-2 border-primary">
+            <div class="col text-center">
+                <h1 class="display-4 mb-4">Контакты</h1>
+            </div>
+        </div>
+
+        <!-- Секция контактов -->
+        <section class="row mb-5">
+            <div class="col-md-8 mx-auto">
+                <!-- Контакт 1: Email -->
+                <div class="row align-items-center mb-4 p-3 border rounded">
+                    <div class="col-auto">
+                        <i class="bi bi-envelope fs-3 text-primary"></i>
+                    </div>
+                    <div class="col">
+                        <h3 class="h5 mb-1">Email</h3>
+                        <p class="mb-0">contact@portfolio.com</p>
+                    </div>
+                </div>
+
+                <!-- Контакт 2: Имя пользователя -->
+                <div class="row align-items-center mb-4 p-3 border rounded">
+                    <div class="col-auto">
+                        <i class="bi bi-person fs-3 text-primary"></i>
+                    </div>
+                    <div class="col">
+                        <h3 class="h5 mb-1">Имя пользователя на Github</h3>
+                        <p class="mb-0">LTA1GH</p>
+                    </div>
+                </div>
+
+                <!-- Контакт 3: Локация -->
+                <div class="row align-items-center mb-4 p-3 border rounded">
+                    <div class="col-auto">
+                        <i class="bi bi-geo-alt fs-3 text-primary"></i>
+                    </div>
+                    <div class="col">
+                        <h3 class="h5 mb-1">Локация</h3>
+                        <p class="mb-0">Москва, Россия</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кнопка открытия модалки -->
+        <div class="row mb-5">
+            <div class="col text-center">
+                <button id="openDialog" type="button" class="btn btn-primary btn-lg px-4">Написать мне</button>
+            </div>
+        </div>
+
+        <!-- Модалка с формой -->
+        <dialog id="contactDialog" aria-labelledby="dialogTitle"> 
+            <h2 id="dialogTitle">Обратная связь</h2> 
+            <form id="contactForm" method="dialog" novalidate> 
+                <label for="name">Имя</label> 
+                <input id="name" name="name" type="text" required minlength="2" autocomplete="given-name"> 
+                <label for="email">E-mail</label> 
+                <input id="email" name="email" type="email" required autocomplete="email">
+                <label for="phone">Телефон</label> 
+                <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="phoneHelp" placeholder="+7 (___) ___-__-__" required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"> 
+                <small id="phoneHelp">Формат: +7 (900) 000-00-00</small> 
+                <label for="date">Дата</label> 
+                <input id="date" name="date" type="date"> 
+                <label for="topic">Тема</label> 
+                <select id="topic" name="topic" required> 
+                    <option value="">Выберите тему</option> 
+                    <option>Вопрос</option> 
+                    <option>Заказ</option> 
+                </select>
+                <label for="message">Сообщение</label> 
+                <textarea id="message" name="message" rows="4" required></textarea> 
+                <div class="form-actions"> 
+                    <button type="button" id="closeDialog">Закрыть</button>
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+        </dialog>
+    </main>
+    <script src="../main.js"></script>
+
+    <!-- Подвал сайта -->
+    <footer class="bg-light border-top border-2 border-primary py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Portfolio. Все права защищены.</p>
+            <p class="mb-0">Email: contact@portfolio.com</p>
+        </div>
+    </footer>
+</body> 
+</html>
